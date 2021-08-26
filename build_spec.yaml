@@ -9,7 +9,13 @@ shell: bash
 #     location: /workspace/Source1/hello123.class
 
 steps:
-  - type: Command
+- type: Command
+    name: "ENV vars"
+    timeoutInSeconds: 400
+    command: |
+      echo "ENV vars output"
+      env
+- type: Command
     name: "Test oci cli command"
     timeoutInSeconds: 400
     command: |
