@@ -1,0 +1,24 @@
+version: 0.1
+component: build
+timeoutInSeconds: 6000
+runAs: root
+shell: bash
+
+# inputArtifacts:
+#   - name: hello-dev-jar
+#     location: /workspace/Source1/hello123.class
+
+steps:
+  - type: Command
+    name: "Test oci cli command"
+    timeoutInSeconds: 400
+    command: |
+      echo "OCI os ns get"
+      oci os ns get
+      
+  - type: Command
+    name: "Test oci cli without access access"
+    timeoutInSeconds: 400
+    command: |
+      echo "Do not have access"
+      oci artifacts generic artifact get --artifact-id ocid1.genericartifact.oc1.iad.0.amaaaaaa34lgq7aadhnjf334pyds2r2gemucsyad2eesxhzj2crsb5fw7xla 
