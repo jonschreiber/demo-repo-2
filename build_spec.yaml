@@ -21,4 +21,4 @@ steps:
     timeoutInSeconds: 400
     command: |
       echo "Do not have access"
-      oci artifacts generic artifact get --artifact-id ocid1.genericartifact.oc1.iad.0.amaaaaaa34lgq7aadhnjf334pyds2r2gemucsyad2eesxhzj2crsb5fw7xla 
+      oci artifacts generic artifact get --artifact-id ocid1.genericartifact.oc1.iad.0.amaaaaaayat6pyaakr3r4pn7dz7lm6qcagpd35ovdzkhortwz2aqp3cdpbxq 
